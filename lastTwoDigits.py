@@ -1,4 +1,5 @@
 def lastTwoDigits(a,b):
-    return str(a**b)[-2:]
-
-print(lastTwoDigits(50998,69143))
+    result = str(pow(a, b,100));
+    if len(result) == 1:
+        result = "0"+result
+    return result
